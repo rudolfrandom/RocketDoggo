@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B4149C51FFE9AFE00643F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */; };
+		4B4149C71FFE9AFE00643F7E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149C61FFE9AFE00643F7E /* GameScene.sks */; };
+		4B4149C91FFE9AFE00643F7E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149C81FFE9AFE00643F7E /* Actions.sks */; };
+		4B4149CB1FFE9AFE00643F7E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149CA1FFE9AFE00643F7E /* GameScene.swift */; };
+		4B4149CD1FFE9AFE00643F7E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149CC1FFE9AFE00643F7E /* GameViewController.swift */; };
+		4B4149D01FFE9AFE00643F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149CE1FFE9AFE00643F7E /* Main.storyboard */; };
+		4B4149D21FFE9AFE00643F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149D11FFE9AFE00643F7E /* Assets.xcassets */; };
+		4B4149D51FFE9AFE00643F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149D31FFE9AFE00643F7E /* LaunchScreen.storyboard */; };
+		4B4149E01FFE9AFE00643F7E /* RocketDoggoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149DF1FFE9AFE00643F7E /* RocketDoggoTests.swift */; };
+		4B4149EB1FFE9AFE00643F7E /* RocketDoggoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149EA1FFE9AFE00643F7E /* RocketDoggoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B4149DC1FFE9AFE00643F7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B4149B91FFE9AFE00643F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B4149C01FFE9AFE00643F7E;
+			remoteInfo = RocketDoggo;
+		};
+		4B4149E71FFE9AFE00643F7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B4149B91FFE9AFE00643F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B4149C01FFE9AFE00643F7E;
+			remoteInfo = RocketDoggo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B4149C11FFE9AFE00643F7E /* RocketDoggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketDoggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B4149C61FFE9AFE00643F7E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		4B4149C81FFE9AFE00643F7E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		4B4149CA1FFE9AFE00643F7E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4B4149CC1FFE9AFE00643F7E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4B4149CF1FFE9AFE00643F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B4149D11FFE9AFE00643F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B4149D41FFE9AFE00643F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B4149D61FFE9AFE00643F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4149DB1FFE9AFE00643F7E /* RocketDoggoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketDoggoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4149DF1FFE9AFE00643F7E /* RocketDoggoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDoggoTests.swift; sourceTree = "<group>"; };
+		4B4149E11FFE9AFE00643F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B4149E61FFE9AFE00643F7E /* RocketDoggoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketDoggoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4149EA1FFE9AFE00643F7E /* RocketDoggoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDoggoUITests.swift; sourceTree = "<group>"; };
+		4B4149EC1FFE9AFE00643F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B4149BE1FFE9AFE00643F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4149D81FFE9AFE00643F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4149E31FFE9AFE00643F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B4149B81FFE9AFE00643F7E = {
+			isa = PBXGroup;
+			children = (
+				4B4149C31FFE9AFE00643F7E /* RocketDoggo */,
+				4B4149DE1FFE9AFE00643F7E /* RocketDoggoTests */,
+				4B4149E91FFE9AFE00643F7E /* RocketDoggoUITests */,
+				4B4149C21FFE9AFE00643F7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B4149C21FFE9AFE00643F7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B4149C11FFE9AFE00643F7E /* RocketDoggo.app */,
+				4B4149DB1FFE9AFE00643F7E /* RocketDoggoTests.xctest */,
+				4B4149E61FFE9AFE00643F7E /* RocketDoggoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B4149C31FFE9AFE00643F7E /* RocketDoggo */ = {
+			isa = PBXGroup;
+			children = (
+				4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */,
+				4B4149C61FFE9AFE00643F7E /* GameScene.sks */,
+				4B4149C81FFE9AFE00643F7E /* Actions.sks */,
+				4B4149CA1FFE9AFE00643F7E /* GameScene.swift */,
+				4B4149CC1FFE9AFE00643F7E /* GameViewController.swift */,
+				4B4149CE1FFE9AFE00643F7E /* Main.storyboard */,
+				4B4149D11FFE9AFE00643F7E /* Assets.xcassets */,
+				4B4149D31FFE9AFE00643F7E /* LaunchScreen.storyboard */,
+				4B4149D61FFE9AFE00643F7E /* Info.plist */,
+			);
+			path = RocketDoggo;
+			sourceTree = "<group>";
+		};
+		4B4149DE1FFE9AFE00643F7E /* RocketDoggoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B4149DF1FFE9AFE00643F7E /* RocketDoggoTests.swift */,
+				4B4149E11FFE9AFE00643F7E /* Info.plist */,
+			);
+			path = RocketDoggoTests;
+			sourceTree = "<group>";
+		};
+		4B4149E91FFE9AFE00643F7E /* RocketDoggoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B4149EA1FFE9AFE00643F7E /* RocketDoggoUITests.swift */,
+				4B4149EC1FFE9AFE00643F7E /* Info.plist */,
+			);
+			path = RocketDoggoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B4149C01FFE9AFE00643F7E /* RocketDoggo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B4149EF1FFE9AFE00643F7E /* Build configuration list for PBXNativeTarget "RocketDoggo" */;
+			buildPhases = (
+				4B4149BD1FFE9AFE00643F7E /* Sources */,
+				4B4149BE1FFE9AFE00643F7E /* Frameworks */,
+				4B4149BF1FFE9AFE00643F7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RocketDoggo;
+			productName = RocketDoggo;
+			productReference = 4B4149C11FFE9AFE00643F7E /* RocketDoggo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B4149DA1FFE9AFE00643F7E /* RocketDoggoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B4149F21FFE9AFE00643F7E /* Build configuration list for PBXNativeTarget "RocketDoggoTests" */;
+			buildPhases = (
+				4B4149D71FFE9AFE00643F7E /* Sources */,
+				4B4149D81FFE9AFE00643F7E /* Frameworks */,
+				4B4149D91FFE9AFE00643F7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B4149DD1FFE9AFE00643F7E /* PBXTargetDependency */,
+			);
+			name = RocketDoggoTests;
+			productName = RocketDoggoTests;
+			productReference = 4B4149DB1FFE9AFE00643F7E /* RocketDoggoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B4149E51FFE9AFE00643F7E /* RocketDoggoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B4149F51FFE9AFE00643F7E /* Build configuration list for PBXNativeTarget "RocketDoggoUITests" */;
+			buildPhases = (
+				4B4149E21FFE9AFE00643F7E /* Sources */,
+				4B4149E31FFE9AFE00643F7E /* Frameworks */,
+				4B4149E41FFE9AFE00643F7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B4149E81FFE9AFE00643F7E /* PBXTargetDependency */,
+			);
+			name = RocketDoggoUITests;
+			productName = RocketDoggoUITests;
+			productReference = 4B4149E61FFE9AFE00643F7E /* RocketDoggoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B4149B91FFE9AFE00643F7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ole Onstad";
+				TargetAttributes = {
+					4B4149C01FFE9AFE00643F7E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4B4149DA1FFE9AFE00643F7E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B4149C01FFE9AFE00643F7E;
+					};
+					4B4149E51FFE9AFE00643F7E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B4149C01FFE9AFE00643F7E;
+					};
+				};
+			};
+			buildConfigurationList = 4B4149BC1FFE9AFE00643F7E /* Build configuration list for PBXProject "RocketDoggo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B4149B81FFE9AFE00643F7E;
+			productRefGroup = 4B4149C21FFE9AFE00643F7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B4149C01FFE9AFE00643F7E /* RocketDoggo */,
+				4B4149DA1FFE9AFE00643F7E /* RocketDoggoTests */,
+				4B4149E51FFE9AFE00643F7E /* RocketDoggoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B4149BF1FFE9AFE00643F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4149D01FFE9AFE00643F7E /* Main.storyboard in Resources */,
+				4B4149C71FFE9AFE00643F7E /* GameScene.sks in Resources */,
+				4B4149D21FFE9AFE00643F7E /* Assets.xcassets in Resources */,
+				4B4149D51FFE9AFE00643F7E /* LaunchScreen.storyboard in Resources */,
+				4B4149C91FFE9AFE00643F7E /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4149D91FFE9AFE00643F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4149E41FFE9AFE00643F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B4149BD1FFE9AFE00643F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4149CB1FFE9AFE00643F7E /* GameScene.swift in Sources */,
+				4B4149CD1FFE9AFE00643F7E /* GameViewController.swift in Sources */,
+				4B4149C51FFE9AFE00643F7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4149D71FFE9AFE00643F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4149E01FFE9AFE00643F7E /* RocketDoggoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B4149E21FFE9AFE00643F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4149EB1FFE9AFE00643F7E /* RocketDoggoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B4149DD1FFE9AFE00643F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B4149C01FFE9AFE00643F7E /* RocketDoggo */;
+			targetProxy = 4B4149DC1FFE9AFE00643F7E /* PBXContainerItemProxy */;
+		};
+		4B4149E81FFE9AFE00643F7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B4149C01FFE9AFE00643F7E /* RocketDoggo */;
+			targetProxy = 4B4149E71FFE9AFE00643F7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B4149CE1FFE9AFE00643F7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4149CF1FFE9AFE00643F7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B4149D31FFE9AFE00643F7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B4149D41FFE9AFE00643F7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B4149ED1FFE9AFE00643F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B4149EE1FFE9AFE00643F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B4149F01FFE9AFE00643F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 948M3SKTZ6;
+				INFOPLIST_FILE = RocketDoggo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onstad.RocketDoggo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B4149F11FFE9AFE00643F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 948M3SKTZ6;
+				INFOPLIST_FILE = RocketDoggo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onstad.RocketDoggo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B4149F31FFE9AFE00643F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 948M3SKTZ6;
+				INFOPLIST_FILE = RocketDoggoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onstad.RocketDoggoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RocketDoggo.app/RocketDoggo";
+			};
+			name = Debug;
+		};
+		4B4149F41FFE9AFE00643F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 948M3SKTZ6;
+				INFOPLIST_FILE = RocketDoggoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onstad.RocketDoggoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RocketDoggo.app/RocketDoggo";
+			};
+			name = Release;
+		};
+		4B4149F61FFE9AFE00643F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 948M3SKTZ6;
+				INFOPLIST_FILE = RocketDoggoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onstad.RocketDoggoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RocketDoggo;
+			};
+			name = Debug;
+		};
+		4B4149F71FFE9AFE00643F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 948M3SKTZ6;
+				INFOPLIST_FILE = RocketDoggoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onstad.RocketDoggoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RocketDoggo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B4149BC1FFE9AFE00643F7E /* Build configuration list for PBXProject "RocketDoggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4149ED1FFE9AFE00643F7E /* Debug */,
+				4B4149EE1FFE9AFE00643F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B4149EF1FFE9AFE00643F7E /* Build configuration list for PBXNativeTarget "RocketDoggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4149F01FFE9AFE00643F7E /* Debug */,
+				4B4149F11FFE9AFE00643F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B4149F21FFE9AFE00643F7E /* Build configuration list for PBXNativeTarget "RocketDoggoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4149F31FFE9AFE00643F7E /* Debug */,
+				4B4149F41FFE9AFE00643F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B4149F51FFE9AFE00643F7E /* Build configuration list for PBXNativeTarget "RocketDoggoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B4149F61FFE9AFE00643F7E /* Debug */,
+				4B4149F71FFE9AFE00643F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B4149B91FFE9AFE00643F7E /* Project object */;
+}
