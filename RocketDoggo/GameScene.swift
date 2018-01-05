@@ -14,6 +14,7 @@ class GameScene: SKScene {
     /* Makes constants from Classes */
     let player = Player()
     let ground = Ground()
+    let boostBotton = UIButton(type: UIButtonType.custom) as UIButton
     
     override func didMove(to view: SKView)
     {
@@ -28,11 +29,27 @@ class GameScene: SKScene {
         /* Adds a ground object to the scene */
         self.ground.spawn(heightOfRocketIs: player.getHeight(), andSizeOfScreenIs: self.size)
         self.addChild(ground)
-    }
+        
+        boostBotton.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerUp), for: UIControlEvents.touchDown)
+        boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerDown), for: UIControlEvents.touchUpInside)
+        self.view?.addSubview(boostBotton)
 
+    }
+    
+    @objc func acceleratePlayerUp()
+    {
+        self.player.addAcceleration()
+    }
+    @objc func acceleratePlayerDown()
+    {
+        self.player.removeAcceleration()
+    }
+    
     override func update(_ currentTime: TimeInterval)
     {
-        // Called before each frame is rendered
-        
+        let playerVerticalPosision: CGFloat = self.player.updateVerticalPosition()
+        //print("The pos of the player is \(playerVerticalPosision)")
+        self.ground.move(playerPosition: playerVerticalPosision)
     }
 }
