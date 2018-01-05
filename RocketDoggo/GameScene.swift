@@ -10,33 +10,29 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
+
+    /* Makes constants from Classes */
+    let player = Player()
+    let ground = Ground()
     
-    override func didMove(to view: SKView) {
-        
+    override func didMove(to view: SKView)
+    {
+        /* Sets up the scene */
         self.backgroundColor = UIColor.blue // delete later
         self.size = view.bounds.size
- 
-        let player = Player()
-        player.spawn()
- 
+
+        /* Adds a player object to the scene */
+        self.player.spawn()
         self.addChild(player)
-        let rocketHeight = player.getHeight()
-        
-        let groundSize = CGSize(width: frame.size.width, height: frame.size.height / 2 - rocketHeight)
-        let groundPos = CGPoint(x: 0, y: 0 - groundSize.height / 2 - rocketHeight)
-        let ground = SKShapeNode(rectOf: groundSize)
-        ground.fillColor = UIColor.white
-        ground.position = groundPos
-        
+
+        /* Adds a ground object to the scene */
+        self.ground.spawn(heightOfRocketIs: player.getHeight(), andSizeOfScreenIs: self.size)
         self.addChild(ground)
-        
     }
-    
-    
-    
-    
-    
-    override func update(_ currentTime: TimeInterval) {
+
+    override func update(_ currentTime: TimeInterval)
+    {
         // Called before each frame is rendered
+        
     }
 }

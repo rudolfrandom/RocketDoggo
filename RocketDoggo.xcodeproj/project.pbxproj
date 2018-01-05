@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191064831FFF25EB00DC2643 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191064821FFF25EB00DC2643 /* Ground.swift */; };
 		4B4149C51FFE9AFE00643F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */; };
 		4B4149C91FFE9AFE00643F7E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149C81FFE9AFE00643F7E /* Actions.sks */; };
 		4B4149CB1FFE9AFE00643F7E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149CA1FFE9AFE00643F7E /* GameScene.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191064821FFF25EB00DC2643 /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
 		4B4149C11FFE9AFE00643F7E /* RocketDoggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketDoggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4149C81FFE9AFE00643F7E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -113,9 +115,10 @@
 				4B4149C81FFE9AFE00643F7E /* Actions.sks */,
 				4B4149F81FFE9F2700643F7E /* GameScene.sks */,
 				4B4149CA1FFE9AFE00643F7E /* GameScene.swift */,
+				191064821FFF25EB00DC2643 /* Ground.swift */,
+				4B4149FA1FFE9F9F00643F7E /* Player.swift */,
 				4B4149FC1FFEBC8500643F7E /* Smoke.sks */,
 				4B4149FD1FFEBC8500643F7E /* Assets.xcassets */,
-				4B4149FA1FFE9F9F00643F7E /* Player.swift */,
 				4B4149CC1FFE9AFE00643F7E /* GameViewController.swift */,
 				4B4149CE1FFE9AFE00643F7E /* Main.storyboard */,
 				4B4149D11FFE9AFE00643F7E /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 				4B4149CB1FFE9AFE00643F7E /* GameScene.swift in Sources */,
 				4B4149CD1FFE9AFE00643F7E /* GameViewController.swift in Sources */,
 				4B4149C51FFE9AFE00643F7E /* AppDelegate.swift in Sources */,
+				191064831FFF25EB00DC2643 /* Ground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
