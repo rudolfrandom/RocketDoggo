@@ -13,15 +13,14 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        self.backgroundColor = UIColor.blue
+        self.backgroundColor = UIColor.blue // delete later
         self.size = view.bounds.size
  
         let player = Player()
-        player.go()
+        player.spawn()
  
         self.addChild(player)
-
-        let rocketHeight = CGFloat(player.height)
+        let rocketHeight = player.getHeight()
         
         let groundSize = CGSize(width: frame.size.width, height: frame.size.height / 2 - rocketHeight)
         let groundPos = CGPoint(x: 0, y: 0 - groundSize.height / 2 - rocketHeight)
