@@ -23,7 +23,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView)
     {
         /* Sets up the scene */
-        self.backgroundColor = UIColor.black // delete later
+        self.backgroundColor = UIColor(red: 0 / 255, green: 0 / 255, blue: 200 / 255, alpha: 1) // delete later
         self.size = view.bounds.size
 
         /* Adds a player object to the scene */
@@ -92,8 +92,8 @@ class GameScene: SKScene {
 
     override func update(_ currentTime: TimeInterval)
     {
-        let playerVerticalPosision: CGFloat = self.player.updateVerticalPosition()
+        let playerVerticalPosition: CGFloat = self.player.updateVerticalPosition()
       
-        self.ground.move(playerPosition: playerVerticalPosision)
+        self.ground.move(playerPosition: playerVerticalPosition)
     }
 }
