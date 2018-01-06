@@ -68,14 +68,10 @@ class GameScene: SKScene {
 
     override func update(_ currentTime: TimeInterval)
     {
-<<<<<<< HEAD
+
         let playerVerticalPosition: CGFloat = self.player.updateVerticalPosition()
       
         self.ground.move(playerPosition: playerVerticalPosition)
-=======
-        let playerVerticalPosision: CGFloat = self.player.updateVerticalPosition()
-        self.player.update()
-        self.ground.move(playerPosition: playerVerticalPosision)
->>>>>>> 17759f87974f41ed7c0ab81485f1f24ee980b035
+
     }
 }
