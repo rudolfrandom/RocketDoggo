@@ -17,9 +17,6 @@ class GameScene: SKScene {
     let boosterEffects = BoosterEffects()
     let boostBotton = UIButton(type: UIButtonType.custom) as UIButton
 
-    var particelBool : Bool = true // dleete=???
-
-    
     override func didMove(to view: SKView)
     {
         /* Sets up the scene */
@@ -27,57 +24,58 @@ class GameScene: SKScene {
         self.size = view.bounds.size
 
         /* Adds a player object to the scene */
-        self.player.spawn()
-        self.addChild(player)
+        self.player.spawn(toScene: self)
 
         /* Adds a ground object to the scene */
-        self.ground.spawn(heightOfRocketIs: player.getHeight(), andSizeOfScreenIs: self.size)
-        self.addChild(ground)
-        
+        self.ground.spawn(toScene: self, heightOfRocketIs: player.getHeight(), andSizeOfScreenIs: self.size)
+
         /* Adds a boost button to the scene */
         boostBotton.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerUp), for: UIControlEvents.touchDown)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerDown), for: UIControlEvents.touchUpInside)
-        boostBotton.addTarget(self, action: #selector(GameScene.moveRocket), for: UIControlEvents.touchDragInside)
+        boostBotton.addTarget(self, action: #selector(GameScene.movePlayer), for: UIControlEvents.touchDragInside)
         self.view?.addSubview(boostBotton)
-        
 
         /* Adds particle effects to the booster */
-        self.boosterEffects.spawn(targetNode: player)
-
+        self.boosterEffects.spawn(to: player)
     }
-    @objc func moveRocket(_ sender: Any, forEvent event: UIEvent)
+    @objc func movePlayer(_ sender: Any, forEvent event: UIEvent)
     {
         let touches: Set<UITouch>? = event.touches(for: boostBotton)
         let touch: UITouch? = touches?.first
-        let touchPoint: CGPoint? = touch?.location(in: boostBotton)
-        let previousLocation = touch?.previousLocation(in: boostBotton)
-        let diff = (touchPoint?.x)! - (previousLocation?.x)!
-        let newPos = CGPoint(x: player.top.position.x + diff, y: player.top.position.y)
-        
-        player.top.position = newPos
-
+        let touchPoint: CGPoint? = touch?.location(in: self)
+        let newPos = CGPoint(x: (touchPoint?.x)!, y: player.top.position.y)
+        player.moveHorizontally(to: newPos)
     }
-    
-    @objc func acceleratePlayerUp()
+
+    @objc func acceleratePlayerUp(_ sender: Any, forEvent event: UIEvent)
     {
         self.player.addAcceleration()
         self.boosterEffects.start()
-
+        
+        let touches: Set<UITouch>? = event.touches(for: boostBotton)
+        let touch: UITouch? = touches?.first
+        let touchPoint: CGPoint? = touch?.location(in: self)
+        let newPos = CGPoint(x: (touchPoint?.x)!, y: player.top.position.y)
+        player.moveHorizontally(to: newPos)
     }
 
     @objc func acceleratePlayerDown()
     {
         self.player.removeAcceleration()
         self.boosterEffects.stop()
-        
-
     }
 
     override func update(_ currentTime: TimeInterval)
     {
+<<<<<<< HEAD
         let playerVerticalPosition: CGFloat = self.player.updateVerticalPosition()
       
         self.ground.move(playerPosition: playerVerticalPosition)
+=======
+        let playerVerticalPosision: CGFloat = self.player.updateVerticalPosition()
+        self.player.update()
+        self.ground.move(playerPosition: playerVerticalPosision)
+>>>>>>> 17759f87974f41ed7c0ab81485f1f24ee980b035
     }
 }
