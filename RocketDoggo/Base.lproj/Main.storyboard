@@ -61,6 +61,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hangar"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcb-IV-RXA">
+                                <rect key="frame" x="13" y="318" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Drag n drop"/>
+                                <connections>
+                                    <segue destination="JnA-9X-dZS" kind="show" id="rYp-EW-jTS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5yC-f5-YfC"/>
@@ -68,7 +76,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEm-0X-JL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="243"/>
+            <point key="canvasLocation" x="173.59999999999999" y="242.42878560719643"/>
+        </scene>
+        <!--Delete Later-->
+        <scene sceneID="OJa-uR-L9m">
+            <objects>
+                <viewController id="JnA-9X-dZS" customClass="DeleteLater" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tea-ud-bIP" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3Du-4f-JxX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLj-XG-xPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="847"/>
         </scene>
     </scenes>
 </document>
