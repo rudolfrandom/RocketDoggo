@@ -22,6 +22,7 @@
 		4B4149FE1FFEBC8500643F7E /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149FC1FFEBC8500643F7E /* Smoke.sks */; };
 		4B4149FF1FFEBC8500643F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149FD1FFEBC8500643F7E /* Assets.xcassets */; };
 		4B6616C22000CD790094A7E0 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4B6616C12000CD790094A7E0 /* Fire.sks */; };
+		4BBD4A5E20011082006A3B93 /* RocketSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD4A5D20011082006A3B93 /* RocketSmoke.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4B4149FC1FFEBC8500643F7E /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Smoke.sks; path = Particles/Smoke.sks; sourceTree = "<group>"; };
 		4B4149FD1FFEBC8500643F7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Particles/Assets.xcassets; sourceTree = "<group>"; };
 		4B6616C12000CD790094A7E0 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Fire.sks; path = Particles/Fire.sks; sourceTree = "<group>"; };
+		4BBD4A5D20011082006A3B93 /* RocketSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = RocketSmoke.sks; path = Particles/RocketSmoke.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				4B4149FA1FFE9F9F00643F7E /* Player.swift */,
 				191064821FFF25EB00DC2643 /* Ground.swift */,
 				4B4149FC1FFEBC8500643F7E /* Smoke.sks */,
+				4BBD4A5D20011082006A3B93 /* RocketSmoke.sks */,
 				4B6616C12000CD790094A7E0 /* Fire.sks */,
 				4B4149FD1FFEBC8500643F7E /* Assets.xcassets */,
 				4B4149CC1FFE9AFE00643F7E /* GameViewController.swift */,
@@ -258,6 +261,7 @@
 			files = (
 				4B4149D01FFE9AFE00643F7E /* Main.storyboard in Resources */,
 				4B4149F91FFE9F2800643F7E /* GameScene.sks in Resources */,
+				4BBD4A5E20011082006A3B93 /* RocketSmoke.sks in Resources */,
 				4B4149D21FFE9AFE00643F7E /* Assets.xcassets in Resources */,
 				4B4149D51FFE9AFE00643F7E /* LaunchScreen.storyboard in Resources */,
 				4B4149FF1FFEBC8500643F7E /* Assets.xcassets in Resources */,
