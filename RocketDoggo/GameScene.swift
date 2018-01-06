@@ -10,15 +10,15 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-/*dum kommentar - slett neste gang noen leser dette*/
-    /* Makes constants from Classes */
+
+    /* Creates objects from Classes */
     let player = Player()
     let ground = Ground()
+    let boosterEffects = BoosterEffects()
     let boostBotton = UIButton(type: UIButtonType.custom) as UIButton
-    let fireParticle = SKEmitterNode(fileNamed: "Fire")
-    let smokeParticle = SKEmitterNode(fileNamed: "Smoke")
-    let rocketSmokeParticle = SKEmitterNode(fileNamed: "RocketSmoke")
-    var particelBool : Bool = true
+
+    var particelBool : Bool = true // dleete=???
+
     
     override func didMove(to view: SKView)
     {
@@ -34,28 +34,17 @@ class GameScene: SKScene {
         self.ground.spawn(heightOfRocketIs: player.getHeight(), andSizeOfScreenIs: self.size)
         self.addChild(ground)
         
+        /* Adds a boost button to the scene */
         boostBotton.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerUp), for: UIControlEvents.touchDown)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerDown), for: UIControlEvents.touchUpInside)
         boostBotton.addTarget(self, action: #selector(GameScene.moveRocket), for: UIControlEvents.touchDragInside)
         self.view?.addSubview(boostBotton)
         
-        // Fire particle
-        fireParticle?.targetNode = player
-        fireParticle?.xScale = 0.1
-        fireParticle?.zPosition = -1
-        fireParticle?.position = CGPoint(x: 0, y: 0)
-        fireParticle?.particleBirthRate = 0
-        player.booster.addChild(fireParticle!)
-        
-        // Smoke Particle
-        rocketSmokeParticle?.targetNode = player
-        rocketSmokeParticle?.xScale = 0.1
-        rocketSmokeParticle?.zPosition = -1
-        rocketSmokeParticle?.position = CGPoint(x: 0, y: 0)
-        rocketSmokeParticle?.particleBirthRate = 0
-        player.booster.addChild(rocketSmokeParticle!)
-    
+
+        /* Adds particle effects to the booster */
+        self.boosterEffects.spawn(targetNode: player)
+
     }
     @objc func moveRocket(_ sender: Any, forEvent event: UIEvent)
     {
@@ -67,27 +56,22 @@ class GameScene: SKScene {
         let newPos = CGPoint(x: player.top.position.x + diff, y: player.top.position.y)
         
         player.top.position = newPos
+
     }
     
     @objc func acceleratePlayerUp()
     {
         self.player.addAcceleration()
-        // start fire
-        if particelBool == true {
-        particelBool = false
-        fireParticle?.particleBirthRate = 500
-        rocketSmokeParticle?.particleBirthRate = 10
-        }
+        self.boosterEffects.start()
+
     }
+
     @objc func acceleratePlayerDown()
     {
         self.player.removeAcceleration()
-        // stop fire
-        if particelBool == false {
-            particelBool = true
-            fireParticle?.particleBirthRate = 0
-            rocketSmokeParticle?.particleBirthRate = 0
-        }
+        self.boosterEffects.stop()
+        
+
     }
 
     override func update(_ currentTime: TimeInterval)
