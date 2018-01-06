@@ -21,7 +21,7 @@ class Player: SKScene, SKPhysicsContactDelegate {
     private let bodyPart = BodyPart()
     private let boosterPart = BoosterPart()
 
-    private var top = SKShapeNode(), body = SKShapeNode(), booster = SKShapeNode()
+    var top = SKShapeNode(), body = SKShapeNode(), booster = SKShapeNode()
     
     private var timer = Timer()
 

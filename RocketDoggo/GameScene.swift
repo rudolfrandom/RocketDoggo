@@ -22,7 +22,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView)
     {
         /* Sets up the scene */
-        self.backgroundColor = UIColor.blue // delete later
+        self.backgroundColor = UIColor.black // delete later
         self.size = view.bounds.size
 
         /* Adds a player object to the scene */
@@ -37,6 +37,9 @@ class GameScene: SKScene {
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerUp), for: UIControlEvents.touchDown)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerDown), for: UIControlEvents.touchUpInside)
         self.view?.addSubview(boostBotton)
+        
+        player.booster.addChild(fireParticle!)
+        fireParticle?.particleBirthRate = 0
 
     }
     
@@ -49,15 +52,18 @@ class GameScene: SKScene {
         fireParticle?.targetNode = player
         fireParticle?.zPosition = -1
         fireParticle?.position = CGPoint(x: 0, y: 0)
-        //BoosterPart.addChild(fireParticle)
-        //player.booster.addChild(fireParticle)
-        // Add childen til boosteren ^
+        fireParticle?.particleBirthRate = 500
+        //player.booster.addChild(fireParticle!)
         }
     }
     @objc func acceleratePlayerDown()
     {
         self.player.removeAcceleration()
         // stop fire
+        if particelBool == false {
+            particelBool = true
+            fireParticle?.particleBirthRate = 0
+        }
     }
 
     override func update(_ currentTime: TimeInterval)
