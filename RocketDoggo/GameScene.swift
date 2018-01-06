@@ -10,7 +10,7 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-
+/*dum kommentar - slett neste gang noen leser dette*/
     /* Makes constants from Classes */
     let player = Player()
     let ground = Ground()
