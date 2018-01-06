@@ -20,7 +20,7 @@ class Ground: SKScene, SKPhysicsContactDelegate {
     
     private var ground = SKShapeNode()
     
-    func spawn(heightOfRocketIs rocketHeight: CGFloat, andSizeOfScreenIs screenSize: CGSize) -> Void
+    func spawn(toScene scene: SKScene, heightOfRocketIs rocketHeight: CGFloat, andSizeOfScreenIs screenSize: CGSize) -> Void
     {
         self.sizeOfGround = CGSize(width: screenSize.width, height: screenSize.height / 2 - rocketHeight)
         self.positionOfGround = CGPoint(x: 0, y: 0 - sizeOfGround.height / 2 - rocketHeight)
@@ -31,6 +31,7 @@ class Ground: SKScene, SKPhysicsContactDelegate {
         self.ground.position = self.positionOfGround
         
         self.addChild(ground)
+        scene.addChild(self)
     }
     
     func move(playerPosition: CGFloat) -> Void

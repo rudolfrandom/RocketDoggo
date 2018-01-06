@@ -17,7 +17,7 @@ class BoosterEffects: SKEmitterNode {
 
     
     /// Spawns the booster effects
-    func spawn(targetNode: Player) -> Void
+    func spawn(to targetNode: Player) -> Void
     {
         // Fire particle
         self.fireParticle?.targetNode = targetNode
@@ -27,6 +27,7 @@ class BoosterEffects: SKEmitterNode {
         self.fireParticle?.particleBirthRate = 0
         targetNode.booster.addChild(fireParticle!)
         
+        // Smoke particle
         self.rocketSmokeParticle?.targetNode = targetNode
         self.rocketSmokeParticle?.xScale = 0.1
         self.rocketSmokeParticle?.zPosition = -1
