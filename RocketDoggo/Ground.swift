@@ -35,9 +35,6 @@ class Ground: SKScene, SKPhysicsContactDelegate {
     
     func move(playerPosition: CGFloat) -> Void
     {
-        //let oneRevolution:SKAction = SKAction.rotate(byAngle: CGFloat.pi * 2, duration: 1)
-        //let moveAction = SKAction.moveTo(y:CGFloat(0 - playerPosition), duration: 2.3)
         self.ground.position.y -= playerPosition
-        //self.ground.run(moveAction)
     }
 }

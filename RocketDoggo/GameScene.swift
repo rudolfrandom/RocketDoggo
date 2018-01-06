@@ -40,16 +40,18 @@ class GameScene: SKScene {
     @objc func acceleratePlayerUp()
     {
         self.player.addAcceleration()
+        // start fire
     }
     @objc func acceleratePlayerDown()
     {
         self.player.removeAcceleration()
+        // stop fire
     }
 
     override func update(_ currentTime: TimeInterval)
     {
         let playerVerticalPosision: CGFloat = self.player.updateVerticalPosition()
-        //print("The pos of the player is \(playerVerticalPosision)")
+      
         self.ground.move(playerPosition: playerVerticalPosision)
     }
 }
