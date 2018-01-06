@@ -39,6 +39,7 @@ class Player: SKScene, SKPhysicsContactDelegate {
         top.fillTexture = SKTexture(imageNamed: self.topPart.textureName)
         top.fillColor = UIColor.white
         top.strokeColor = UIColor.clear
+        top.zPosition = 1
         top.position = CGPoint(x: 0, y: 0 - self.topPart.height / 2)
         
         /* Sets up the body part */
@@ -46,6 +47,7 @@ class Player: SKScene, SKPhysicsContactDelegate {
         body.fillTexture = SKTexture(imageNamed: self.bodyPart.textureName)
         body.fillColor = UIColor.white
         body.strokeColor = UIColor.clear
+        body.zPosition = 1
         body.position = CGPoint(x: 0, y: 0 - self.bodyPart.height / 2 - self.topPart.height / 2)
         
         /* Sets up the booster part */
@@ -53,6 +55,7 @@ class Player: SKScene, SKPhysicsContactDelegate {
         booster.fillTexture = SKTexture(imageNamed: self.boosterPart.textureName)
         booster.fillColor = UIColor.white
         booster.strokeColor = UIColor.clear
+        booster.zPosition = 1
         booster.position = CGPoint(x: 0, y: 0 - bodyPart.height / 2 - boosterPart.height / 2)
      
         /* Adds them to the rocket */

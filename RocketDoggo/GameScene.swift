@@ -38,6 +38,11 @@ class GameScene: SKScene {
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerDown), for: UIControlEvents.touchUpInside)
         self.view?.addSubview(boostBotton)
         
+        // Fire particle
+        fireParticle?.targetNode = player
+        fireParticle?.xScale = 0.1
+        fireParticle?.zPosition = -1
+        fireParticle?.position = CGPoint(x: 0, y: 0)
         player.booster.addChild(fireParticle!)
         fireParticle?.particleBirthRate = 0
 
@@ -49,9 +54,6 @@ class GameScene: SKScene {
         // start fire
         if particelBool == true {
         particelBool = false
-        fireParticle?.targetNode = player
-        fireParticle?.zPosition = -1
-        fireParticle?.position = CGPoint(x: 0, y: 0)
         fireParticle?.particleBirthRate = 500
         //player.booster.addChild(fireParticle!)
         }
