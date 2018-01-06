@@ -45,7 +45,7 @@ class GameScene: SKScene {
     {
         self.player.removeAcceleration()
     }
-    
+
     override func update(_ currentTime: TimeInterval)
     {
         let playerVerticalPosision: CGFloat = self.player.updateVerticalPosition()

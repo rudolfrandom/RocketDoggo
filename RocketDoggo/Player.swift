@@ -11,6 +11,7 @@ import GameplayKit
 
 class Player: SKScene, SKPhysicsContactDelegate {
 
+
     private var acceleration: Double = 0.04
     private var topSpeed: CGFloat = 1.0
     private var verticalSpeed: CGFloat = 0.0
@@ -19,7 +20,7 @@ class Player: SKScene, SKPhysicsContactDelegate {
     private let topPart = TopPart()
     private let bodyPart = BodyPart()
     private let boosterPart = BoosterPart()
-    
+
     private var top = SKShapeNode(), body = SKShapeNode(), booster = SKShapeNode()
     
     private var timer = Timer()
@@ -69,15 +70,18 @@ class Player: SKScene, SKPhysicsContactDelegate {
     
     func addAcceleration() -> Void
     {
+
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: self.acceleration,
                                      target: self, selector: #selector(self.speedUp), userInfo: nil, repeats: true)
+
     }
     
     func removeAcceleration() -> Void
     {
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: self.acceleration, target: self, selector: #selector(self.speedDown), userInfo: nil, repeats: true)
+
     }
     
     @objc func speedUp()
@@ -103,6 +107,7 @@ class Player: SKScene, SKPhysicsContactDelegate {
         self.verticalPosition += self.verticalSpeed / 100
         return self.verticalPosition
     }
+
 }
 
 class TopPart {
