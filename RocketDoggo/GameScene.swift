@@ -15,6 +15,9 @@ class GameScene: SKScene {
     let player = Player()
     let ground = Ground()
     let boostBotton = UIButton(type: UIButtonType.custom) as UIButton
+    let fireParticle = SKEmitterNode(fileNamed: "Fire")
+    let smokeParticle = SKEmitterNode(fileNamed: "Smoke")
+    var particelBool : Bool = true
     
     override func didMove(to view: SKView)
     {
@@ -41,6 +44,15 @@ class GameScene: SKScene {
     {
         self.player.addAcceleration()
         // start fire
+        if particelBool == true {
+        particelBool = false
+        fireParticle?.targetNode = player
+        fireParticle?.zPosition = -1
+        fireParticle?.position = CGPoint(x: 0, y: 0)
+        //BoosterPart.addChild(fireParticle)
+        //player.booster.addChild(fireParticle)
+        // Add childen til boosteren ^
+        }
     }
     @objc func acceleratePlayerDown()
     {
