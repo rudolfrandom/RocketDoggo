@@ -16,7 +16,9 @@ class GameScene: SKScene {
     let ground = Ground()
     let boosterEffects = BoosterEffects()
     let boostBotton = UIButton(type: UIButtonType.custom) as UIButton
-    
+
+    var particelBool : Bool = true // dleete=???
+
     
     override func didMove(to view: SKView)
     {
@@ -36,16 +38,32 @@ class GameScene: SKScene {
         boostBotton.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerUp), for: UIControlEvents.touchDown)
         boostBotton.addTarget(self, action: #selector(GameScene.acceleratePlayerDown), for: UIControlEvents.touchUpInside)
+        boostBotton.addTarget(self, action: #selector(GameScene.moveRocket), for: UIControlEvents.touchDragInside)
         self.view?.addSubview(boostBotton)
         
+
         /* Adds particle effects to the booster */
         self.boosterEffects.spawn(targetNode: player)
+
+    }
+    @objc func moveRocket(_ sender: Any, forEvent event: UIEvent)
+    {
+        let touches: Set<UITouch>? = event.touches(for: boostBotton)
+        let touch: UITouch? = touches?.first
+        let touchPoint: CGPoint? = touch?.location(in: boostBotton)
+        let previousLocation = touch?.previousLocation(in: boostBotton)
+        let diff = (touchPoint?.x)! - (previousLocation?.x)!
+        let newPos = CGPoint(x: player.top.position.x + diff, y: player.top.position.y)
+        
+        player.top.position = newPos
+
     }
     
     @objc func acceleratePlayerUp()
     {
         self.player.addAcceleration()
         self.boosterEffects.start()
+
     }
 
     @objc func acceleratePlayerDown()
@@ -53,6 +71,7 @@ class GameScene: SKScene {
         self.player.removeAcceleration()
         self.boosterEffects.stop()
         
+
     }
 
     override func update(_ currentTime: TimeInterval)

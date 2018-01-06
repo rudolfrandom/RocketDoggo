@@ -13,7 +13,7 @@ class BoosterEffects: SKEmitterNode {
 
     let fireParticle = SKEmitterNode(fileNamed: "Fire")
     let smokeParticle = SKEmitterNode(fileNamed: "Smoke")
-    
+    let rocketSmokeParticle = SKEmitterNode(fileNamed: "RocketSmoke")
 
     
     /// Spawns the booster effects
@@ -24,17 +24,26 @@ class BoosterEffects: SKEmitterNode {
         self.fireParticle?.xScale = 0.1
         self.fireParticle?.zPosition = -1
         self.fireParticle?.position = CGPoint(x: 0, y: 0 - targetNode.getBoosterHeight())
-        targetNode.booster.addChild(fireParticle!)
         self.fireParticle?.particleBirthRate = 0
+        targetNode.booster.addChild(fireParticle!)
+        
+        self.rocketSmokeParticle?.targetNode = targetNode
+        self.rocketSmokeParticle?.xScale = 0.1
+        self.rocketSmokeParticle?.zPosition = -1
+        self.rocketSmokeParticle?.position = CGPoint(x: 0, y: 0 - targetNode.getBoosterHeight())
+        self.rocketSmokeParticle?.particleBirthRate = 0
+        targetNode.booster.addChild(rocketSmokeParticle!)
     }
     
     func start() -> Void
     {
         self.fireParticle?.particleBirthRate = 50
+        self.rocketSmokeParticle?.particleBirthRate = 10
     }
     
     func stop() -> Void
     {
         self.fireParticle?.particleBirthRate = 0
+        self.rocketSmokeParticle?.particleBirthRate = 0
     }
 }
