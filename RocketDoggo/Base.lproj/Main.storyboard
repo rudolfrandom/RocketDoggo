@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lMY-1M-AnI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lMY-1M-AnI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Drag n drop"/>
                                 <connections>
-                                    <segue destination="JnA-9X-dZS" kind="show" id="rYp-EW-jTS"/>
+                                    <segue destination="x2i-t2-faK" kind="show" id="RQ4-H9-5Gw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,20 +78,20 @@
             </objects>
             <point key="canvasLocation" x="173.59999999999999" y="242.42878560719643"/>
         </scene>
-        <!--Delete Later-->
-        <scene sceneID="OJa-uR-L9m">
+        <!--Delete View Controller-->
+        <scene sceneID="hBh-4S-YXK">
             <objects>
-                <viewController id="JnA-9X-dZS" customClass="DeleteLater" customModule="RocketDoggo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tea-ud-bIP" customClass="SKView">
+                <viewController id="x2i-t2-faK" customClass="DeleteViewController" customModule="RocketDoggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="VHp-RI-dgF" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="3Du-4f-JxX"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="10R-9K-7Do"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mLj-XG-xPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfC-i6-QoD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="847"/>
+            <point key="canvasLocation" x="1182" y="780"/>
         </scene>
     </scenes>
 </document>

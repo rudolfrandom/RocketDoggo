@@ -5,14 +5,16 @@
 //  Created by Martine Onstad on 06/01/2018.
 //  Copyright © 2018 Ole Onstad. All rights reserved.
 //
+
 import SpriteKit
 import GameplayKit
 
-class DeleteLater: SKScene {
-    
+class DeleteLaterScene: SKScene {
+
     let sprite = SKShapeNode(circleOfRadius: 50)
 
     override func didMove(to view: SKView) {
+
         self.backgroundColor = UIColor(red: 0 / 255, green: 0 / 255, blue: 200 / 255, alpha: 1)
         self.size = view.bounds.size
         
@@ -43,5 +45,4 @@ class DeleteLater: SKScene {
             }
         }
     }
-
 }

@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		191064831FFF25EB00DC2643 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191064821FFF25EB00DC2643 /* Ground.swift */; };
+		19942E2D2002A93C00DB3684 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19942E2C2002A93C00DB3684 /* DeleteViewController.swift */; };
+		19942E2F2002B24400DB3684 /* DeleteLaterScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 19942E2E2002B24300DB3684 /* DeleteLaterScene.sks */; };
 		19D987BA2001141D0094C885 /* BoosterEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D987B92001141D0094C885 /* BoosterEffects.swift */; };
-		19D987BC200177580094C885 /* DeleteLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D987BB200177580094C885 /* DeleteLater.swift */; };
+		19D987BC200177580094C885 /* DeleteLaterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D987BB200177580094C885 /* DeleteLaterScene.swift */; };
 		4B4149C51FFE9AFE00643F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */; };
 		4B4149C91FFE9AFE00643F7E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4B4149C81FFE9AFE00643F7E /* Actions.sks */; };
 		4B4149CB1FFE9AFE00643F7E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4149CA1FFE9AFE00643F7E /* GameScene.swift */; };
@@ -46,8 +48,10 @@
 
 /* Begin PBXFileReference section */
 		191064821FFF25EB00DC2643 /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		19942E2C2002A93C00DB3684 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
+		19942E2E2002B24300DB3684 /* DeleteLaterScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DeleteLaterScene.sks; sourceTree = "<group>"; };
 		19D987B92001141D0094C885 /* BoosterEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoosterEffects.swift; sourceTree = "<group>"; };
-		19D987BB200177580094C885 /* DeleteLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLater.swift; sourceTree = "<group>"; };
+		19D987BB200177580094C885 /* DeleteLaterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLaterScene.swift; sourceTree = "<group>"; };
 		4B4149C11FFE9AFE00643F7E /* RocketDoggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketDoggo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4149C81FFE9AFE00643F7E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -122,7 +126,9 @@
 				4B4149C41FFE9AFE00643F7E /* AppDelegate.swift */,
 				4B4149C81FFE9AFE00643F7E /* Actions.sks */,
 				4B4149F81FFE9F2700643F7E /* GameScene.sks */,
+				19942E2E2002B24300DB3684 /* DeleteLaterScene.sks */,
 				4B4149CA1FFE9AFE00643F7E /* GameScene.swift */,
+				19D987BB200177580094C885 /* DeleteLaterScene.swift */,
 				19D987B92001141D0094C885 /* BoosterEffects.swift */,
 				4B4149FA1FFE9F9F00643F7E /* Player.swift */,
 				191064821FFF25EB00DC2643 /* Ground.swift */,
@@ -131,8 +137,8 @@
 				4B6616C12000CD790094A7E0 /* Fire.sks */,
 				4B4149FD1FFEBC8500643F7E /* Assets.xcassets */,
 				4B4149CC1FFE9AFE00643F7E /* GameViewController.swift */,
+				19942E2C2002A93C00DB3684 /* DeleteViewController.swift */,
 				4B4149CE1FFE9AFE00643F7E /* Main.storyboard */,
-				19D987BB200177580094C885 /* DeleteLater.swift */,
 				4B4149D11FFE9AFE00643F7E /* Assets.xcassets */,
 				4B4149D31FFE9AFE00643F7E /* LaunchScreen.storyboard */,
 				4B4149D61FFE9AFE00643F7E /* Info.plist */,
@@ -265,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19942E2F2002B24400DB3684 /* DeleteLaterScene.sks in Resources */,
 				4B4149D01FFE9AFE00643F7E /* Main.storyboard in Resources */,
 				4B4149F91FFE9F2800643F7E /* GameScene.sks in Resources */,
 				4BBD4A5E20011082006A3B93 /* RocketSmoke.sks in Resources */,
@@ -304,7 +311,8 @@
 				19D987BA2001141D0094C885 /* BoosterEffects.swift in Sources */,
 				4B4149C51FFE9AFE00643F7E /* AppDelegate.swift in Sources */,
 				191064831FFF25EB00DC2643 /* Ground.swift in Sources */,
-				19D987BC200177580094C885 /* DeleteLater.swift in Sources */,
+				19D987BC200177580094C885 /* DeleteLaterScene.swift in Sources */,
+				19942E2D2002A93C00DB3684 /* DeleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
