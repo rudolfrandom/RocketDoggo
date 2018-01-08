@@ -12,6 +12,7 @@ import GameplayKit
 class DeleteLaterScene: SKScene {
 
     let sprite = SKShapeNode(circleOfRadius: 50)
+    let sprite2 = SKShapeNode(circleOfRadius: 50)
 
     override func didMove(to view: SKView) {
 
@@ -20,10 +21,15 @@ class DeleteLaterScene: SKScene {
         
         sprite.fillColor = UIColor.green
         sprite.strokeColor = UIColor.green
-        sprite.glowWidth = 5
         sprite.position = CGPoint(x: 0, y: 0)
         
         self.addChild(sprite)
+        
+        sprite2.fillColor = UIColor.red
+        sprite2.strokeColor = UIColor.red
+        sprite2.position = CGPoint(x: 0, y: 0 - 100)
+        
+        self.addChild(sprite2)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -32,6 +38,9 @@ class DeleteLaterScene: SKScene {
             
             if sprite.contains(location) {
                 sprite.position = location
+            }
+            else if sprite2.contains(location) {
+                sprite2.position = location
             }
         }
     }
@@ -42,6 +51,9 @@ class DeleteLaterScene: SKScene {
             
             if sprite.contains(location) {
                 sprite.position = location
+            }
+            else if sprite2.contains(location) {
+                sprite2.position = location
             }
         }
     }
